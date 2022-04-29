@@ -67,7 +67,7 @@ Dentro de esta carpeta se documentaran y se mostrará el código de los problema
     float vertice.y
     struct Coord coords
 ### Variables de salida:
-    getArea(coords,n)
+    buffer console output getArea(coords,n)
 ### Compilación y ejecución:
     $ gcc -o ejercicio7.out ejercicio7.c && ./ejercicio7.out
 
