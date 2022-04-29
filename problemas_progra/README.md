@@ -4,62 +4,70 @@ Dentro de esta carpeta se documentaran y se mostrará el código de los problema
 ## Problema 1
 ![Problema1](/problemas_progra/ejercicio1.c )
 ### Variables de entrada:
-    i: Contador de números ingresados
-    n: Contador de números positivos ingresados.
-    x: Almacena temporalmente el número ingresado.
-    media: Almacena la suma de los números ingresados.
+    float x
+### Variables de salida:
+    float med / n
 ### Compilación y ejecución:
-    $ gcc -o problema1.out problema1.c && ./problema1.out
+    $ gcc -o ejercicio1.c.out ejercicio1.c && ./ejercicio1.c.out
 
 ## Problema 2
 ![Problema2]( /problemas_progra/ejercicio2.c)
 ### Variables de entrada:
-    n: Contador de números ingresados.
-    x: Almacena temporalmete el número ingresado.
-    med: Almacena la suma de los números ingresados (mayores o iguales a cero).
-    min: Almacena el número de menor valor.
-    max: Almacena el número de mayor valor.
+    float x
+### Variables de salida:
+    float med / n
 ### Compilación y ejecución:
-    $ gcc -o problema2.out problema2.c && ./problema2.out
+    $ gcc -o ejercicio2.out ejercicio2.c && ./ejercicio2.out
 
 ## Problema 3
 ![Problema3]( /problemas_progra/ejercicio3.c)
 ### Variables de entrada:
-    n: Entero positivo al que se le calculará su "raíz"
-    r: Entero positivo que aproximará a la raíz.
+    float x
+### Variables de salida:
+    float med / n
+    float max
+    float min
 ### Compilación y ejecución:
-    $ gcc -o problema3.out problema3.c && ./problema3.out
+    $ gcc -o ejercicio3.out ejercicio3.c && ./ejercicio3.out
 
 ## Problema 4
 ![Problema4](/problemas_progra/ejercicio4.c )
 ### Variables de entrada:
-    n: Contiene el número ingresado
-    i: Cambia su valor progresivamente para poder obtener el residuo de (n) con distintos números.
-    primo: Vale 1 si el número es primo y 0 si no.
+    float N
+### Variables de salida:
+    int i-1
 ### Compilación y ejecución:
-    $ gcc -o problema4.out problema4.c && ./problema4.out
+    $ gcc -o ejercicio4.out ejercicio4.c && ./ejercicio4.out
 
 ## Problema 5
 ![Problema5](/problemas_progra/ejercicio5.c )
 ### Variables de entrada:
-    n1: Número entero positivo que define el principio del rango. Es mayor a 1.
-    n2: Número entero positivo que define el final del rango. Es mayor a n1.
-    i: Variable de conteo cuyo valor aumenta progresivamente desde n1 hasta n2.
-    j: Para cada valor de i, cambia su valor progresivamente (desde 2 hasta i-1) para poder obtener el residuo i%j con distintos valores de (j).
-    primo: Vale 1 si el número es primo y 0 si no.
+    int N
+### Variables de salida:
+    buffer console output
 ### Compilación y ejecución:
-    gcc -o problema5.out problema5.c && ./problema5.out
+    gcc -o ejercicio5.out ejercicio5.c && ./ejercicio5.out
 
 ## Problema 6
 ![Problema6](/problemas_progra/ejercicio6.c )
 ### Variables de entrada:
-    FM: Contiene el número de vértices del polígono.
-    N: No es necesaria, pero facilita la comprensión de la matemática. Representa la longitud del arreglo, contando desde cero.
-### Variables de conteo:
-    fila: Para "movernos" por las filas del arreglo.
-    i: Para la sumatoria.
+    int N1
+    int N2
 ### Variables de salida:
-    A: Guarda el valor de la sumatoria en todo momento.
+    int i
 ### Compilación y ejecución:
-    $ gcc -o problema4.out problema4.c && ./problema4.out
+    $ gcc -o ejercicio6.out ejercicio6.c && ./ejercicio6.out
+    
+    
+    ## Problema 7
+![Problema6](/problemas_progra/ejercicio7.c )
+### Variables de entrada:
+    int n
+    float vertice.x
+    float vertice.y
+    struct Coord coords
+### Variables de salida:
+    getArea(coords,n)
+### Compilación y ejecución:
+    $ gcc -o ejercicio7.out ejercicio7.c && ./ejercicio7.out
 
