@@ -25,7 +25,7 @@ Luego de realizar la operación se reproduce una gráfica y se guarda en un arch
 - float pearson
 ###Diagrama de Flujo
 
- ![Diagrama1](/2doParcial/Untitled Diagram.drawio.png )
+ [Diagrama1](/2doParcial/Untitled Diagram.drawio.png )
 ### Código
     /*
     Autor:      Javier de Leon
