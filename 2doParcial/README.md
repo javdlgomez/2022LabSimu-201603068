@@ -24,8 +24,7 @@ Luego de realizar la operación se reproduce una gráfica y se guarda en un arch
 - float londa
 - float pearson
 ###Diagrama de Flujo
-
- [Diagrama1](/2doParcial/Untitled Diagram.drawio.png )
+[a relative link](/2doParcial/presentacion1.c)
 ### Código
     /*
     Autor:      Javier de Leon
