@@ -186,9 +186,12 @@ Nuestro algoritmo es sumamente ineficiente ya que realiza una comparación de ca
 <-
 - float x
 
+
+
 ### Diagrama de Flujo
- ![Diagrama1](/
-Copy of Untitled Diagram.drawio(1).png )
+
+[Diagrama 2](https://github.com/javdlgomez/2022LabSimu-201603068/blob/main/2doParcial/Copy%20of%20Untitled%20Diagram.drawio(1).png)
+
 ### Código
     /*
     Autor:      Javier de Leon
