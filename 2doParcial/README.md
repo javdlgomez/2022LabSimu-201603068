@@ -27,7 +27,7 @@ Luego de realizar la operación se reproduce una gráfica y se guarda en un arch
 
 ### Diagrama de Flujo
 
-[Diagrama 1]( /2022LabSimu-201603068/2doParcial/Untitled Diagram.drawio.png )
+[Diagrama 1](https://github.com/javdlgomez/2022LabSimu-201603068/blob/main/2doParcial/Untitled%20Diagram.drawio.png)
 
 ### Código
     /*
