@@ -27,7 +27,7 @@ Luego de realizar la operación se reproduce una gráfica y se guarda en un arch
 
 ### Diagrama de Flujo
 
-[Diagrama 1](/2doParcial/presentacion1.c)
+[Diagrama 1](/2doParcial/Untitled Diagram.drawio.png)
 
 ### Código
     /*
