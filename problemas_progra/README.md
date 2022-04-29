@@ -2,7 +2,7 @@
 Dentro de esta carpeta se documentaran y se mostrará el código de los problemas dejados en clase.
 
 ## Problema 1
-![Problema1](/2022LabSimu-201603068/problemas_progra/ejercicio1.c )
+![Problema1](/problemas_progra/ejercicio1.c )
 ### Variables de entrada:
     i: Contador de números ingresados
     n: Contador de números positivos ingresados.
