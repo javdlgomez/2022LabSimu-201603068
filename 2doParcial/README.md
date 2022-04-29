@@ -195,14 +195,20 @@ Nuestro algoritmo es sumamente ineficiente ya que realiza una comparación de ca
     #include <stdio.h>
     #include <stdlib.h>
     
+    //definimos f para poder realizar NR
     float f(float x) { return (cos(x) / sin(x)); }
+    
     float new_rap(float x0, int n, float err) {
       float x = x0;
+      //x2 no hace nada pero no la hemos quitado
       float x2 = 0;
       float absErr = sqrt(pow(err, 2));
       for (int i = 0; i < n; i++) {
         x = x + sin(2 * x) / 2;
+        
         x2 = pow(x, 2);
+        
+        //ciclo principal del algoritmo, no esta optimizado
         if (absErr > sqrt(pow(f(x), 2))) {
           printf("iteraciones: %i\n", n);
           return printf("posible raiz %f\n", x);
@@ -223,9 +229,11 @@ Nuestro algoritmo es sumamente ineficiente ya que realiza una comparación de ca
       x00 = x0;
       printf("ingrese la tolerancia de error: ");
       scanf("%f", &err);
+      //control del ciclo
       // printf("posible raiz: %f", new_rap(x0, n,err));
       new_rap(x0, n, err);
     
+      //usamos buffers para personalizar el plot
       char bufferx[1024];
       snprintf(bufferx, sizeof(bufferx), "set xrange [%f:%f]", x00 - 5, x00 + 5);
       char buffery[1024];
@@ -239,7 +247,7 @@ Nuestro algoritmo es sumamente ineficiente ya que realiza una comparación de ca
     
       fp = fopen("PuntoInicial.tmp", "w");
       gnupipe = _popen("gnuplot -presistent", "w");
-    
+      // si no quieren guardar un archivo cambiar i 5->4
       fprintf(fp, "%f %f\n", x0, f(x0));
       for (int i = 0; i < 5; i++) {
     
