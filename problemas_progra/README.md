@@ -12,7 +12,7 @@ Dentro de esta carpeta se documentaran y se mostrará el código de los problema
     $ gcc -o problema1.out problema1.c && ./problema1.out
 
 ## Problema 2
-![Problema2](/2022LabSimu201907400/Problemas_Programacion/Imagenes/P2.png)
+![Problema2]( /2022LabSimu-201603068/problemas_progra/ejercicio2.c )
 ### Variables de entrada:
     n: Contador de números ingresados.
     x: Almacena temporalmete el número ingresado.
@@ -23,7 +23,7 @@ Dentro de esta carpeta se documentaran y se mostrará el código de los problema
     $ gcc -o problema2.out problema2.c && ./problema2.out
 
 ## Problema 3
-![Problema3](/2022LabSimu201907400/Problemas_Programacion/Imagenes/P3.png)
+![Problema3]( /2022LabSimu-201603068/problemas_progra/ejercicio3.c )
 ### Variables de entrada:
     n: Entero positivo al que se le calculará su "raíz"
     r: Entero positivo que aproximará a la raíz.
@@ -31,7 +31,7 @@ Dentro de esta carpeta se documentaran y se mostrará el código de los problema
     $ gcc -o problema3.out problema3.c && ./problema3.out
 
 ## Problema 4
-![Problema4](/2022LabSimu201907400/Problemas_Programacion/Imagenes/P4.png)
+![Problema4](/2022LabSimu-201603068/problemas_progra/ejercicio4.c )
 ### Variables de entrada:
     n: Contiene el número ingresado
     i: Cambia su valor progresivamente para poder obtener el residuo de (n) con distintos números.
@@ -40,7 +40,7 @@ Dentro de esta carpeta se documentaran y se mostrará el código de los problema
     $ gcc -o problema4.out problema4.c && ./problema4.out
 
 ## Problema 5
-![Problema5](/2022LabSimu201907400/Problemas_Programacion/Imagenes/P5.png)
+![Problema5](/2022LabSimu-201603068/problemas_progra/ejercicio5.c )
 ### Variables de entrada:
     n1: Número entero positivo que define el principio del rango. Es mayor a 1.
     n2: Número entero positivo que define el final del rango. Es mayor a n1.
@@ -51,7 +51,7 @@ Dentro de esta carpeta se documentaran y se mostrará el código de los problema
     gcc -o problema5.out problema5.c && ./problema5.out
 
 ## Problema 6
-![Problema6](/2022LabSimu201907400/Problemas_Programacion/Imagenes/P6.png)
+![Problema6](/2022LabSimu-201603068/problemas_progra/ejercicio6.c )
 ### Variables de entrada:
     FM: Contiene el número de vértices del polígono.
     N: No es necesaria, pero facilita la comprensión de la matemática. Representa la longitud del arreglo, contando desde cero.
