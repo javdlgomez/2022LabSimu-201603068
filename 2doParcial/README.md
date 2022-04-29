@@ -23,8 +23,12 @@ Luego de realizar la operación se reproduce una gráfica y se guarda en un arch
 - float densidad
 - float londa
 - float pearson
-###Diagrama de Flujo
-[a relative link](/2doParcial/presentacion1.c)
+
+
+### Diagrama de Flujo
+
+[Diagrama 1](/2doParcial/presentacion1.c)
+
 ### Código
     /*
     Autor:      Javier de Leon
