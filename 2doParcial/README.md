@@ -23,7 +23,9 @@ Luego de realizar la operación se reproduce una gráfica y se guarda en un arch
 - float densidad
 - float londa
 - float pearson
+###Diagrama de Flujo
 
+![Diagrama1](/Untitled Diagram.drawio.png )
 ### Código
     /*
     Autor:      Javier de Leon
@@ -181,6 +183,9 @@ Nuestro algoritmo es sumamente ineficiente ya que realiza una comparación de ca
 <-
 - float x
 
+### Diagrama de Flujo
+![Diagrama1](/
+Copy of Untitled Diagram.drawio(1).png )
 ### Código
     /*
     Autor:      Javier de Leon
