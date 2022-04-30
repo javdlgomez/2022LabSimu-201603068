@@ -7,6 +7,8 @@ Realiza el experimento de ondas estacionarias con una cuerda. Le solicitan que g
 - Estimar el valor de la densidad lineal de la cuerda. La longitud de onda cuando la tension sea de 6N.
 
 #### Metodología: 
+EL método de newton raphson inicia en un punto dado por el usuario  y utiliza una función dada junto a su derivada para obtener el siguiente paso de esta forma: x(n+1) = xn-f(x)/f'(x)
+
 Tomamos los datos del usuario de una tabla 2D arbitraria para realizar una regresión lineal de estos. La regresión se optimiza con mínimos cuadrados y toma como inputs los datos anteriores los cuales han sido almacenados en una estructura abstracta y se llaman como posiciones en un array de tamaño n. Esto no es una buena práctica de programación en C, recomendamos emplear un llamado por direcciones.
 Luego de realizar la operación se reproduce una gráfica y se guarda en un archivo .eps empleando gnuplot, luego se obtienen los parámetros y estadísticos deseados tomando como inputs los valores obtenidos durante el proceso de la regresión. Para poder realizar las gráficas empleamos buffers. 
 
