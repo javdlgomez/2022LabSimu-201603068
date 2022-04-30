@@ -175,6 +175,8 @@ Debe de realizar la grafica de la ecuación y comparar el resultado obtenido con
 - Estimar el valor de la densidad lineal de la cuerda. La longitud de onda cuando la tension sea de 6N.
 
 #### Metodología: 
+La regresión lineal es el proceso de obtención de la mejor recta que simula el comportamiento de una cantidad arbitraria de datos proporcionados y el coeficiente de pearson es el cociente entre la covarianza y la multiplicación de las varianzas, es una forma de normalizar la medición de la covarianza de un set de datos.
+
 Utilizamos el valor inicial dado, el número de iteraciones y la tolerancia de error para alimentar a nuestra implementación del algoritmo NR. En este caso no generalizamos el programa para realizar el cálculo de una función arbitraria pero es posible extenderlo agregando un método de derivación explícita y buffers.
 Nuestro algoritmo es sumamente ineficiente ya que realiza una comparación de cada iteración del proceso de NR para comprobar si ya se obtuvo un valor menor a la tolerancia de error pedida. Al momento de cumplir la condición anterior el programa se detiene y en caso contrario el algoritmo continua hasta cumplir con el número de interaciones o la tolerancia de error pedida.
 
