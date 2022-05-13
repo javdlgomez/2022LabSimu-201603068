@@ -51,7 +51,8 @@ int main() {
   FILE *gnupipe = NULL;
   char *GnuCommands[] = {
       "set title \"presentacion2\"", bufferx, buffery,
-      "plot 'PuntoInicial.tmp' title 'Posible Raiz NR', cos(x)/sin(x)", "save 'plotPres2.eps'"};
+      "plot 'PuntoInicial.tmp' title 'Posible Raiz NR', cos(x)/sin(x)",
+      "save 'plotPres2.eps'"};
 
   fp = fopen("PuntoInicial.tmp", "w");
   gnupipe = _popen("gnuplot -presistent", "w");
