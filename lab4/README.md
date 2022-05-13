@@ -35,7 +35,7 @@ o descendiente de los índices.
     Compilador: gcc 12.0
     Compilar: gcc -o ejercicio1.out ejercicio1.c
     Librerías:  stdio
-    Resumen:    Saca la media de 3 numeros
+    Resumen:    ordenar de forma descendente o ascendente numeros pares de 2 a 20
     */
 
     #include <stdio.h>
@@ -43,13 +43,16 @@ o descendiente de los índices.
     int main(){
     int vector[10];
     char user_input;
+    //esto ya no se necesito pero ahi se queda como el recuerdo de algo que pudo haber sido
     char control;
     for(int i = 0; i < 10; i++)
     {
         vector[i] = 2*(i+1);
     }
+    //aqui es importante usar las comillas
     while (user_input != 'a' && user_input != 'd' ) {
         printf("ingresa el orden de los datos: \n");
+        //aqui es muy importante llamar al valor
         scanf("%c",&user_input);
 
     }
@@ -96,12 +99,13 @@ El algoritmo de ordenamiento de burbuja es una de las peores implementaciones pa
     Compilador: gcc 12.0
     Compilar: gcc -o ejercicio1.out ejercicio1.c
     Librerías:  stdio
-    Resumen:    Saca la media de 3 numeros
+    Resumen:    ordenar un arreglo de 5 usando el algoritmo de burbuja
     */
 
     #include <stdio.h>
 
     int main(){
+    //esta implementación no es mía
 
         int arr[5], x, y, temp;  
 
@@ -109,7 +113,7 @@ El algoritmo de ordenamiento de burbuja es una de las peores implementaciones pa
         printf("Ingrese los valores a guardar: ");
 
         for(x = 0; x < 5; x++)
-
+            //importante llamar por valor
             scanf("%d", &arr[x]);
 
         x = 0;
@@ -119,7 +123,8 @@ El algoritmo de ordenamiento de burbuja es una de las peores implementaciones pa
             y = 0;        
 
             while(y < 5- x - 1){
-
+                //esta parte es basicamente el ordenamiento las antereiores
+                //solo son para recorrer el arreglo
                 if(arr[y] > arr[y + 1]){
 
                     temp = arr[y];
@@ -177,18 +182,19 @@ Las operaciones deseadas se realizan operando componente a componente vectores e
     Compilador: gcc 12.0
     Compilar: gcc -o ejercicio1.out ejercicio1.c
     Librerías:  stdio
-    Resumen:    calcula el area de area de un poligono con user inputs, deben darse
-    el numero de vertices y sus coordenadas (x,y) en sentido anti horario
+    Resumen:    calcular varias operaciones entre 2 vectores en R3
     */
     #include <stdio.h>
     #include <math.h>
 
-    // Vamos a definir una estructura abstracta con alias Coord para evitar usar dos
-    // arreglos
+        
+    //basicamente uso las mismas variables en las funciones para que se entienda
+    //que tienen exactamente el mismo rol aunuqe matematicamente no sean precisas
 
     void magnitud(int v[3], int n){
         float suma = 0;
         for( int i = 0; i<3; i++){
+        //no es necesario usar matematica pero ya es costumbre
             suma += pow((v[i]),2);
 
         }
@@ -213,7 +219,9 @@ Las operaciones deseadas se realizan operando componente a componente vectores e
         printf("El producto interno es: %f \n",suma);
 
     }
-
+    //esto se puede hacer de una forma mas elegante
+    //pero no me acordaba como hacerlo y sale mas rapido
+    //haciendo la fuerza bruta porque (i+1)%3 no sirve
     void vect(int v1[3], int v2[3]){
         float v[3];
         v[0] = v1[1]*v2[2]-v2[1]*v2[2];
@@ -268,16 +276,16 @@ El factorial es la multiplicación de todos los enteros posteriores junto con el
     Compilador: gcc 12.0
     Compilar: gcc -o ejercicio1.out ejercicio1.c
     Librerías:  stdio
-    Resumen:    calcula el area de area de un poligono con user inputs, deben darse
-    el numero de vertices y sus coordenadas (x,y) en sentido anti horario
+    Resumen:    factorial de un numero entero positivo
     */
     #include <stdio.h>
     #include<conio.h>
     int factorial(int n){
+    //casos especiales
         if (n <= 1){
             return(1);
         }
-
+       //esta es la recurrencia, literalmente solo se repite la función hasta que n sea 1
         return(n*factorial(n-1));
 
     }
@@ -320,12 +328,12 @@ Evaluar una sumatoria es posible mediante cualquier tipo de ciclo, solo es impor
     Compilador: gcc 12.0
     Compilar: gcc -o ejercicio1.out ejercicio1.c
     Librerías:  stdio
-    Resumen:    calcula el area de area de un poligono con user inputs, deben darse
-    el numero de vertices y sus coordenadas (x,y) en sentido anti horario
+    Resumen:    calcula una sumatoria
     */
     #include <stdio.h>
     float sumatoria(int n){
         float suma = 0;
+        //esta es la sumatoria especifica
         for (int i = 1; i<=n;i++){
             suma += i*i*(i-3);
         }
@@ -350,13 +358,14 @@ Evaluar una sumatoria es posible mediante cualquier tipo de ciclo, solo es impor
     Compilador: gcc 12.0
     Compilar: gcc -o ejercicio1.out ejercicio1.c
     Librerías:  stdio
-    Resumen:    calcula el area de area de un poligono con user inputs, deben darse
-    el numero de vertices y sus coordenadas (x,y) en sentido anti horario
+    Resumen:    calcula una sumatoria
     */
     #include <stdio.h>
     float sumatoria(int n){
         float suma = 0;
         for (float i = 2; i<=n;i++){
+        //lo unico importante en este ejercicio
+        //es declarar i como float para que no colapse
             suma += 3*(1/(i-1));
             // printf("%f\n" ,suma);
         }
@@ -382,20 +391,22 @@ Evaluar una sumatoria es posible mediante cualquier tipo de ciclo, solo es impor
     Compilador: gcc 12.0
     Compilar: gcc -o ejercicio1.out ejercicio1.c
     Librerías:  stdio
-    Resumen:    calcula el area de area de un poligono con user inputs, deben darse
-    el numero de vertices y sus coordenadas (x,y) en sentido anti horario
+    Resumen:    calcula una sumatoria
     */
     #include <stdio.h>
     #include <math.h>
     double sumatoria(int n){
         double suma = 0;
         for (int i = 1; i<=n;i++){
+        //esto es basicamente fibonacci, solo que como estaba en la hoja
+        tiene un typo. A menos que haya asumido mal y si era así
             // pow(((1+sqrt(5))/2),n)-pow(((1-sqrt(5))/2),n)
             suma += (pow(((1+sqrt(5))/2),i)-pow(((1-sqrt(5))/2),i))/sqrt(5);
         }
         return suma;
     }
     /*
+    //habia hecho una implementacion para checkar lo anterior
     float fibonaci(int n){
         if (n>2){
             return fibonaci(n-1)+fibonaci(n-2);
@@ -422,8 +433,7 @@ Evaluar una sumatoria es posible mediante cualquier tipo de ciclo, solo es impor
     Compilador: gcc 12.0
     Compilar: gcc -o ejercicio1.out ejercicio1.c
     Librerías:  stdio
-    Resumen:    calcula el area de area de un poligono con user inputs, deben darse
-    el numero de vertices y sus coordenadas (x,y) en sentido anti horario
+    Resumen:    calcula una sumatoria
     */
     #include <stdio.h>
     #include <math.h>
@@ -435,6 +445,8 @@ Evaluar una sumatoria es posible mediante cualquier tipo de ciclo, solo es impor
         return suma;
     }
     /*
+    //que hace fibonacci aqui? cuando yo hice este codigo solo Dios y yo sabiamos
+    //pero ahora solo Dios sabe
     float fibonaci(int n){
         if (n>2){
             return fibonaci(n-1)+fibonaci(n-2);
