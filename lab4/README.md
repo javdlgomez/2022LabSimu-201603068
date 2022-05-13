@@ -83,8 +83,13 @@ El algoritmo de ordenamiento de burbuja es una de las peores implementaciones pa
 ### Diagrama de Flujo
 
 [Diagrama 2](https://github.com/javdlgomez/2022LabSimu-201603068/blob/main/lab4/Copy%20of%20Untitled%20Diagram.drawio(1).png)
+### Pseudo Código
+1 Iniciar el arreglo y las variables del algoritmo de burbuja.
+2 Llenar el arreglo con los inputs del usuario.
+3 Realizar la implementación del algoritmo de burbuja.
+4 Imprimir el arreglo en ordenado.
 
-    ### Código
+### Código
      /*
     Autor:      Javier de Leon
     Fecha:      12/5/22
@@ -141,4 +146,308 @@ El algoritmo de ordenamiento de burbuja es una de las peores implementaciones pa
 
         return 0;
 
+    }
+    
+    
+    
+### Tercer Problema: 
+
+
+#### Metodología: 
+Las operaciones deseadas se realizan operando componente a componente vectores en R3, para ello vamos a tomar los arreglos dentro de ciclos y realizar de forma explícita las operaciones binarias.
+
+#### Variables de Entrada y Salida: 
+->
+- float v1[3]
+- float v2[3]
+
+<-
+- buffer output
+- float magnitud, suma, dot, vect
+
+### Diagrama de Flujo
+
+[Diagrama 3](https://github.com/javdlgomez/2022LabSimu-201603068/blob/main/lab4/Copy%20of%20Untitled%20Diagram.drawio(1).png)
+
+    
+### Código
+        /*
+    Autor:      Javier de Leon
+    Fecha:      12/5/22
+    Compilador: gcc 12.0
+    Compilar: gcc -o ejercicio1.out ejercicio1.c
+    Librerías:  stdio
+    Resumen:    calcula el area de area de un poligono con user inputs, deben darse
+    el numero de vertices y sus coordenadas (x,y) en sentido anti horario
+    */
+    #include <stdio.h>
+    #include <math.h>
+
+    // Vamos a definir una estructura abstracta con alias Coord para evitar usar dos
+    // arreglos
+
+    void magnitud(int v[3], int n){
+        float suma = 0;
+        for( int i = 0; i<3; i++){
+            suma += pow((v[i]),2);
+
+        }
+        printf("La magnitud del vector %i es: %f \n",n,sqrt(suma));
+
+    }
+    void suma(int v1[3], int v2[3]){
+        float suma = 0;
+        for( int i = 0; i<3; i++){
+            suma += v1[i]+v2[i];
+
+        }
+        printf("La suma es: %f \n",suma);
+
+    }
+    void dot(int v1[3], int v2[3]){
+        float suma = 0;
+        for( int i = 0; i<3; i++){
+            suma += v1[i]*v2[i];
+
+        }
+        printf("El producto interno es: %f \n",suma);
+
+    }
+
+    void vect(int v1[3], int v2[3]){
+        float v[3];
+        v[0] = v1[1]*v2[2]-v2[1]*v2[2];
+        v[1] = -(v1[0]*v2[2]-v2[0]*v1[2]);
+        v[2] = v1[0]*v2[1]-v2[0]*v1[1];
+        printf("La componente x del producto cruz es: %f\n",&v[0]);
+        printf("La componente y del producto cruz es: %f\n",&v[1]);
+        printf("La componente x del producto cruz es: %f\n",&v[2]);
+
+    }
+
+
+
+    int main(){
+    int v1[3];
+    int v2[3];
+    for(int i = 0; i<3;i++){
+        printf("Input v1 %i coord: ",i+1);
+        scanf("%i", &v1[i]);
+        printf("Input v2 %i coord: ",i+1);
+        scanf("%i", &v2[i]);
+
+    }
+    magnitud(v1,1);
+    magnitud(v2,2);
+    suma(v1,v2);
+    dot(v1,v2);
+    vect(v1,v2);
+        return 0;
+    }
+
+### Quinto Problema: 
+
+
+#### Metodología: 
+El factorial es la multiplicación de todos los enteros posteriores junto con el número deseado a evaluar, esto se presta fácilmente para recursividad ya que se puede repetir el proceso de evaluación hasta llegar al número 1 en el cual detenemos la recursión.
+
+#### Variables de Entrada y Salida: 
+->
+- int num
+
+<-
+- buffer output float factorial(num))
+
+[Diagrama 5](https://github.com/javdlgomez/2022LabSimu-201603068/blob/main/lab4/Copy%20of%20Untitled%20Diagram.drawio(1).png)
+
+    
+### Código
+    /*
+    Autor:      Javier de Leon
+    Fecha:      10/5/22
+    Compilador: gcc 12.0
+    Compilar: gcc -o ejercicio1.out ejercicio1.c
+    Librerías:  stdio
+    Resumen:    calcula el area de area de un poligono con user inputs, deben darse
+    el numero de vertices y sus coordenadas (x,y) en sentido anti horario
+    */
+    #include <stdio.h>
+    #include<conio.h>
+    int factorial(int n){
+        if (n <= 1){
+            return(1);
+        }
+
+        return(n*factorial(n-1));
+
+    }
+    int main(){
+        int num = 0;
+        printf("ingrese el numero para el factorial:");
+        scanf("%i",&num);
+        printf("el factorial es: %i",factorial(num));
+
+
+
+
+        return 0;
+    }
+
+
+
+
+
+### Sexto Problema: 
+
+
+#### Metodología: 
+Evaluar una sumatoria es posible mediante cualquier tipo de ciclo, solo es importante tener cuidado a la diferencia de terminología en matemática y computación para tomar en cuenta el último valor deseado. La implementación de todos estos problemas es equivalente por tanto se realizará un esquema general que es equivalente en todas las soluciones.
+
+#### Variables de Entrada y Salida: 
+->
+- int n
+
+<-
+- buffer output float sumatoria(num)
+
+[Diagrama 6](https://github.com/javdlgomez/2022LabSimu-201603068/blob/main/lab4/Copy%20of%20Untitled%20Diagram.drawio(1).png)
+
+    
+### Código 6a
+    /*
+    Autor:      Javier de Leon
+    Fecha:      10/5/22
+    Compilador: gcc 12.0
+    Compilar: gcc -o ejercicio1.out ejercicio1.c
+    Librerías:  stdio
+    Resumen:    calcula el area de area de un poligono con user inputs, deben darse
+    el numero de vertices y sus coordenadas (x,y) en sentido anti horario
+    */
+    #include <stdio.h>
+    float sumatoria(int n){
+        float suma = 0;
+        for (int i = 1; i<=n;i++){
+            suma += i*i*(i-3);
+        }
+        return suma;
+    }
+
+    int main(){
+        int n = 0;
+        printf("Ingrese el n para la sumatoria: ");
+        scanf("%i", &n);
+        printf("La sumatoria es: %f", sumatoria(n));
+
+
+        return 0;
+    }
+
+    
+### Código 6b
+    /*
+    Autor:      Javier de Leon
+    Fecha:      10/5/22
+    Compilador: gcc 12.0
+    Compilar: gcc -o ejercicio1.out ejercicio1.c
+    Librerías:  stdio
+    Resumen:    calcula el area de area de un poligono con user inputs, deben darse
+    el numero de vertices y sus coordenadas (x,y) en sentido anti horario
+    */
+    #include <stdio.h>
+    float sumatoria(int n){
+        float suma = 0;
+        for (float i = 2; i<=n;i++){
+            suma += 3*(1/(i-1));
+            // printf("%f\n" ,suma);
+        }
+        return suma;
+    }
+
+    int main(){
+        int n = 0;
+        printf("Ingrese el n para la sumatoria: ");
+        scanf("%i", &n);
+        printf("La sumatoria es: %f", sumatoria(n));
+
+
+        return 0;
+    }
+
+    }
+
+### Código 6c
+    /*
+    Autor:      Javier de Leon
+    Fecha:      10/5/22
+    Compilador: gcc 12.0
+    Compilar: gcc -o ejercicio1.out ejercicio1.c
+    Librerías:  stdio
+    Resumen:    calcula el area de area de un poligono con user inputs, deben darse
+    el numero de vertices y sus coordenadas (x,y) en sentido anti horario
+    */
+    #include <stdio.h>
+    #include <math.h>
+    double sumatoria(int n){
+        double suma = 0;
+        for (int i = 1; i<=n;i++){
+            // pow(((1+sqrt(5))/2),n)-pow(((1-sqrt(5))/2),n)
+            suma += (pow(((1+sqrt(5))/2),i)-pow(((1-sqrt(5))/2),i))/sqrt(5);
+        }
+        return suma;
+    }
+    /*
+    float fibonaci(int n){
+        if (n>2){
+            return fibonaci(n-1)+fibonaci(n-2);
+        }
+        return 1;
+    }   
+    */
+    int main(){
+        int n = 0;
+        printf("Ingrese el n para la sumatoria: ");
+        scanf("%i", &n);
+        sumatoria(n);
+        printf("La sumatoria es: %f \n", sumatoria(n));
+        // printf("El resultado es: %f", fibonaci(n));
+
+        return 0;
+    }
+
+
+### Código 6d
+    /*
+    Autor:      Javier de Leon
+    Fecha:      10/5/22
+    Compilador: gcc 12.0
+    Compilar: gcc -o ejercicio1.out ejercicio1.c
+    Librerías:  stdio
+    Resumen:    calcula el area de area de un poligono con user inputs, deben darse
+    el numero de vertices y sus coordenadas (x,y) en sentido anti horario
+    */
+    #include <stdio.h>
+    #include <math.h>
+    double sumatoria(int n){
+        double suma = 0;
+        for (int i = 2; i<=n;i++){
+            suma += .1*(3*pow(2,i-1)+4);
+        }
+        return suma;
+    }
+    /*
+    float fibonaci(int n){
+        if (n>2){
+            return fibonaci(n-1)+fibonaci(n-2);
+        }
+        return 1;
+    }   
+    */
+    int main(){
+        int n = 0;
+        printf("Ingrese el n para la sumatoria: ");
+        scanf("%i", &n);
+        sumatoria(n);
+        printf("La sumatoria es: %f \n", sumatoria(n));
+
+        return 0;
     }
