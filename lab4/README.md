@@ -18,7 +18,7 @@ Apartamos un espacio en memoria para el arreglo de enteros deseado, luego este s
 
 ### Diagrama de Flujo
 
-[Diagrama 1](https://github.com/javdlgomez/2022LabSimu-201603068/blob/main/lab4/Untitled%20Diagram.drawio.png)
+[Diagrama 1](https://github.com/javdlgomez/2022LabSimu-201603068/blob/main/lab4/Untitled%20Diagram(5).drawio.png)
 ### Pseudo Código
 1 Iniciar el arreglo y el caracter que escogerá el usuario en memoria.
 2 Llenar el arreglo con números pares en el intervalo deseado
@@ -82,7 +82,7 @@ El algoritmo de ordenamiento de burbuja es una de las peores implementaciones pa
 
 ### Diagrama de Flujo
 
-[Diagrama 2](https://github.com/javdlgomez/2022LabSimu-201603068/blob/main/lab4/Copy%20of%20Untitled%20Diagram.drawio(1).png)
+[Diagrama 2](https://github.com/javdlgomez/2022LabSimu-201603068/blob/main/lab4/Copy%20of%20Untitled%20Diagram.drawio(2).png)
 ### Pseudo Código
 1 Iniciar el arreglo y las variables del algoritmo de burbuja.
 2 Llenar el arreglo con los inputs del usuario.
@@ -167,7 +167,7 @@ Las operaciones deseadas se realizan operando componente a componente vectores e
 
 ### Diagrama de Flujo
 
-[Diagrama 3](https://github.com/javdlgomez/2022LabSimu-201603068/blob/main/lab4/Copy%20of%20Untitled%20Diagram.drawio(1).png)
+[Diagrama 3](https://github.com/javdlgomez/2022LabSimu-201603068/blob/main/lab4/Copy%20of%20Copy%20of%20Untitled%20Diagram.drawio.png)
 
     
 ### Código
@@ -258,7 +258,7 @@ El factorial es la multiplicación de todos los enteros posteriores junto con el
 <-
 - buffer output float factorial(num))
 
-[Diagrama 5](https://github.com/javdlgomez/2022LabSimu-201603068/blob/main/lab4/Copy%20of%20Untitled%20Diagram.drawio(1).png)
+[Diagrama 5](https://github.com/javdlgomez/2022LabSimu-201603068/blob/main/lab4/Copy%20of%20Copy%20of%20Copy%20of%20Untitled%20Diagram.drawio.png)
 
     
 ### Código
@@ -310,7 +310,7 @@ Evaluar una sumatoria es posible mediante cualquier tipo de ciclo, solo es impor
 <-
 - buffer output float sumatoria(num)
 
-[Diagrama 6](https://github.com/javdlgomez/2022LabSimu-201603068/blob/main/lab4/Copy%20of%20Untitled%20Diagram.drawio(1).png)
+[Diagrama 6](https://github.com/javdlgomez/2022LabSimu-201603068/blob/main/lab4/Copy%20of%20Copy%20of%20Copy%20of%20Copy%20of%20Untitled%20Diagram.drawio.png)
 
     
 ### Código 6a
