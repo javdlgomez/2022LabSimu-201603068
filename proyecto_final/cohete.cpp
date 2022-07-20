@@ -1,3 +1,12 @@
+/*
+    Autor:      Javier de Leon
+    Fecha:      19/7/22
+    Compilador: gcc 12.0
+    Compilar:   gcc -o ejercicio1.out ejercicio1.c
+    Librerías:  stdio
+    Resumen:    Cálculo del tiempo de vuelo, velocidad de un cohete en cierta altura y ciertas caracterísitcas particulares
+*/
+
 //incluimos la libreria que hicimos
 #include "cohete.hpp"
 #include <cstdio>
