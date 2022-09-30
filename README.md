@@ -11,12 +11,14 @@ Requerimos un compilador para C, utilizando linux.
 $ sudo apt get install build-essential
 '''
 
+$$ y'(x) = x^2+1 $$. hola
+  y(0) = 0 
+$$ 0x<1 $$
+
+
 ## Contenido
 El repositorio contiene archivos en bash y lenguaje C.
 
 ## Licencia
 [MIT](LICENSE)
 
-$$ y'(x) = x^2+1 $$. hola
-  y(0) = 0 
-$$ 0x<1 $$
