@@ -17,6 +17,6 @@ El repositorio contiene archivos en bash y lenguaje C.
 ## Licencia
 [MIT](LICENSE)
 
-$$ y'(x) = x^2+1 $$.
- $ y(0) = 0 $
+$$ y'(x) = x^2+1 $$. hola
+  y(0) = 0 
 $$ 0x<1 $$
